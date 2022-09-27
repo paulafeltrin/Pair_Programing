@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {Link} from 'react-router-dom';
+import Bancada from "../../img/bancada.png"
 
 const Container = styled.header`
 width:100%;
@@ -35,6 +36,7 @@ export default function Header(){
     return(
         <>
             <Container>
+                <img src={Bancada}/>
                 <Link to='/'><Button>Voltar</Button></Link>
                 <ul>
                     <li>ABOUT</li>
