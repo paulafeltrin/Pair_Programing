@@ -1,9 +1,6 @@
 import React from 'react';
 import Rotas from './services/routes';
-import {createGlobalStyle} from "styled-components";
-import Header from "./Components/Header"
-import Main from "./Components/Main"
-import Footer from ".Components/Footer"
+import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle=createGlobalStyle`
 *{
@@ -15,10 +12,7 @@ const GlobalStyle=createGlobalStyle`
 const App = ()=>{
   return(
     <>
-      <GlobalStyle/>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <GlobalStyle />
       <Rotas />
     </>
   );
