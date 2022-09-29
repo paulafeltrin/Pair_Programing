@@ -31,7 +31,7 @@ export const Container = styled.section`
 `;
 
 export const List = styled.ul`
-    display:flex;
+    display: flex;
     gap: clamp(1rem, 5vw, 6rem);
     list-style: none;
 

@@ -1,21 +1,30 @@
 import styled from "styled-components";
 
 export const Container= styled.section`
-width:2.3vw;
-height:3vh;
-display:flex;
-justify-content: center;
+    padding: 10vh 3vw;
+    background-color: #F2F4F1;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 3vw;
+        margin: 0 0 0 0.5vw;
+        cursor: pointer;
+    }
 `
+export const List = styled.ul`
+    display: flex;
+    gap: clamp(1rem, 5vw, 6rem);
+    list-style: none;
 
-// const Div = styled.div`
-// color: black;
-// display: flex;
-// justify-content: center;
-// background-color: lightsalmon;
+    li{
+        padding: 1rem 2rem;
+        font-weight: 400;
+        cursor: pointer;
+    }
 
-//     img{
-//         width: 8vw;
-//         padding: 2vw 2vh;
-//         cursor: pointer;
-//     }
-// `
+    li:hover,
+    li:focus{
+        outline: 5px solid #373737;
+    }
+`;

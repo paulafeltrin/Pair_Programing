@@ -1,11 +1,10 @@
 import React from 'react';
 import {GlobalStyle} from "./Global/GlobalStyle"
-import Header from './Components/Header';
-import Main from './Components/Main';
-import Footer from './Components/Footer';
+import Header from './Components/Header/index';
+import Main from './Components/Main/index';
+import Footer from './Components/Footer/index';
 
-
-const App = () => {
+export default function App(){
   return(
     <>
       <GlobalStyle />
@@ -13,7 +12,17 @@ const App = () => {
       <Main />
       <Footer />
     </>
-  );
+  )
 }
+// const App = () => {
+//   return(
+//     <>
+//       <GlobalStyle />
+//       <Header />
+//       <Main />
+//       <Footer />
+//     </>
+//   );
+// }
 
-export default App;
+// export default App;

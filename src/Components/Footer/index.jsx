@@ -3,7 +3,7 @@ import Instagram from "../../Assets/instagram.png"
 import Twitter from "../../Assets/twitter.png"
 import Facebook from "../../Assets/facebook.png"
 import Pinterest from "../../Assets/pinterest.png"
-import * as S from "./style";
+import * as S from "../Footer/style";
 
 export default function Footer(){
     return(
@@ -14,6 +14,13 @@ export default function Footer(){
                     <img src={Twitter} alt="Twitter" />
                     <img src={Facebook} alt="Facebook" />
                     <img src={Pinterest} alt="Pinterest" />
+                </div>
+                <div>
+                    <S.List>
+                        <li>ABOUT</li>
+                        <li>RECIPES</li>
+                        <li>SUBSCRIBE</li>
+                    </S.List>
                 </div>
             </S.Container>
         </footer>
