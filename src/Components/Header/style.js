@@ -47,4 +47,7 @@ export const List = styled.ul`
     li:focus{
         outline: 5px solid #373737;
     }
+    @media(max-width: 500px) {
+        display: none;
+    }
 `;

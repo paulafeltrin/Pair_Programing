@@ -9,21 +9,38 @@ export const Title = styled.div`
     h2{
         text-align: center;
         font-size: 1.7rem;
-        font-family: 'Times New Roman', Times, serif;
         color: gray;
         text-transform: uppercase;
         padding: 5vh 0;
+    }
+    @media(max-width: 500px){
+        padding: 3vh 0;
+
+        h2{
+            color: black;
+        }
     }
 `
 export const RowTitle = styled.div`
     border: 2px solid gray;
     width: 5%;
     margin: 0 auto;
+
+    @media(max-width: 500px){
+        border: 2px solid black;
+        width: 20%;
+    }
 `
 export const Menu = styled.div`
     display: flex;
     justify-content: space-around;
     padding-bottom: 30vh;
+
+    @media(max-width: 500px){
+        display: block;
+        width: 100%;
+        padding-bottom: 2vh;
+    }
 `
 export const Card = styled.div`
     width: 25%;
@@ -39,11 +56,20 @@ export const Card = styled.div`
         color: gray;
         padding: 5vh 0 10vh 0;
     }
+    @media(max-width: 500px){
+        width: 90%;
+        margin: 2.5vh auto;
+    }
 `
 export const Linha = styled.div`
     border: 2px solid gray;
     width: 15%;
     margin: 0 auto;
+
+    @media(max-width: 500px){
+        border: 2px solid black;
+        width: 20%;
+    }
 `
 export const About = styled.section`
     display: flex;
@@ -51,11 +77,19 @@ export const About = styled.section`
     img{
         width: 50%;
     }
+    @media(max-width: 500px){
+        display: block;
+        text-align: center;
+
+        img{
+            width: 80vw;
+        }
+    }
 `
 export const Text = styled.section`
     width: 30%;
     height: 45%;
-    margin: 35vh auto;
+    margin: 20vh auto;
 
     h4{
         text-transform: uppercase;
@@ -67,6 +101,18 @@ export const Text = styled.section`
     }
     p{
         padding: 5vh 0;
+    }
+    @media(max-width: 500px){
+        margin: 5vh auto;
+        width: 70%;
+
+        h4{
+            font-size: 3rem;
+            color: black;
+        }
+        p{
+            padding: 3vh 0;
+        }
     }
 `
 export const Form = styled.form`
@@ -91,6 +137,8 @@ export const Form = styled.form`
         height: 8vh;
         width: 30vw;
         margin: 4vh auto;
+        text-align: center;
+        font-size: 2rem;
     }
     button{
         background-color: #DFE4DE;
@@ -99,5 +147,14 @@ export const Form = styled.form`
         margin: 0 auto;
         width: 15vw;
         cursor: pointer;
+    }
+
+    @media(max-width: 500px){
+        input{
+            width: 80vw;
+        }
+        button{
+            width: 80vw;
+        }
     }
 `

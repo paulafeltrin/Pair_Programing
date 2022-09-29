@@ -11,6 +11,17 @@ export const Container= styled.section`
         margin: 0 0 0 0.5vw;
         cursor: pointer;
     }
+    @media(max-width: 500px){
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+
+        img{
+            width: 10vw;
+            padding: 5vh 0;
+            cursor: pointer;
+        }
+    }
 `
 export const List = styled.ul`
     display: flex;
@@ -18,7 +29,7 @@ export const List = styled.ul`
     list-style: none;
 
     li{
-        padding: 1rem 2rem;
+        padding: 1vh 2vw;
         font-weight: 400;
         cursor: pointer;
     }
@@ -26,5 +37,15 @@ export const List = styled.ul`
     li:hover,
     li:focus{
         outline: 5px solid #373737;
+    }
+
+    @media(max-width: 900px){
+        li{
+            padding: 0.7vh 1.7vw;
+        }
+    }
+    @media(max-width: 500px){
+        display: flex;
+        flex-direction: column;
     }
 `;
