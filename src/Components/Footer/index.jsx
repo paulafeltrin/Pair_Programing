@@ -23,6 +23,13 @@ export default function Footer(){
                     </S.List>
                 </div>
             </S.Container>
+            <S.Div>
+                <p>Layout produzido por Vai na Web 
+                    para fins exclusivamente 
+                    educacionais. 
+                    Referência: 
+                    https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k/</p>
+            </S.Div>
         </footer>
     )
 }

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Bancada from "../../Assets/bancada.png"
+import Mobile from "../../Assets/bancada_mobile.png"
 
 export const Container = styled.section`
     width: 100%;
@@ -7,8 +8,6 @@ export const Container = styled.section`
     border: 20px solid white;
     background-image: url(${Bancada});
     background-size: 100% 100%;
-    /* background-size: cover; */
-    /* background-position-y: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,6 +26,53 @@ export const Container = styled.section`
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    @media screen and (max-width: 670px) {
+        min-height: 90vh;
+        border: 10px solid white;
+        background-image: url(${Mobile});
+        background-size: 100% 100%;
+
+        h1{
+            margin-block: 10rem auto;
+        }
+
+        img{
+            display: none;
+        }
+
+        nav{
+            width: 100%;
+        }
+    }
+`;
+
+export const Button = styled.button`
+    display: none;
+    position: relative; 
+    left: 95%;
+    cursor: pointer;
+
+    ::before,
+    ::after{
+        content: '';
+        width: 25px;
+        display: block;
+        position: absolute;
+        border: 2px solid #373737;
+    }   
+
+    ::before{
+        bottom: 0.4em;
+    }
+
+    span{
+        display: none;
+    }
+
+    @media screen and (max-width: 670px) {
+        display: initial;
     }
 `;
 
@@ -47,7 +93,8 @@ export const List = styled.ul`
     li:focus{
         outline: 5px solid #373737;
     }
-    @media(max-width: 500px) {
+
+    @media screen and (max-width: 670px) {
         display: none;
     }
 `;

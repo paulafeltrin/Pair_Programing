@@ -10,6 +10,7 @@ export default function Header(){
                 <div>
                     <img src={Logo} alt="Logo" />
                     <nav>
+                        <S.Button><span>Menu</span></S.Button>
                         <S.List>
                             <li>ABOUT</li>
                             <li>RECIPES</li>
